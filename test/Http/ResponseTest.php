@@ -32,6 +32,7 @@ class ResponseTest extends \PHPUnit\Framework\TestCase
     }
     
     /**
+     * @covers \ASCII\Http\Response::__construct
      * @dataProvider constructProvider
      */
     public function testConstruct($propName, $expectedResult)
