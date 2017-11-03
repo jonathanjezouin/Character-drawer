@@ -15,6 +15,7 @@
 		"doctrine/orm": "~2.5"
 	},
 	"require-dev" : {
-		"phpunit/phpunit": "dev-master"
+		"phpunit/phpunit": "dev-master",
+		"satooshi/php-coveralls": "dev-master"
 	}
 }

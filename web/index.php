@@ -1,10 +1,7 @@
 <?php
-use ASCII\Entity\User;
 use ASCII\Http\Response;
-use ASCII\Manager\Manager;
-use ASCII\Entity\UserLevel;
 
-require_once "./../vendor/autoload.php";
+require_once "./../vendor/autoload.php";    
 
 // Paragraphe pour insertion facile
 

@@ -11,8 +11,6 @@ class Manager
 
     private static $instance;
 
-    private $doctrine;
-
     private function __construct()
     { 
     }
