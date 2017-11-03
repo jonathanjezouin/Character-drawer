@@ -87,7 +87,7 @@ class CharsFontModel
             $sth->execute();
             $this->success = "Success !";
         } catch (\Throwable $e) {
-            $this->error = "Error : character id " . $charsId . " delete has failed - " . $e->getMessage();
+            $this->error = "Error : character id " . $charId . " delete has failed - " . $e->getMessage();
         }
     }
 }

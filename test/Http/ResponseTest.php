@@ -50,12 +50,12 @@ class ResponseTest extends \PHPUnit\Framework\TestCase
             );
     }
     
-    /**
-     * @dataProvider statusProvider
-     * @expectedException \TypeError
-     */
-    public function testSetStatus($status, $reason)
-    {
-        $response = $this->getResponse()->setStatus($status, $reason);
-    }
+//     /**
+//      * @dataProvider statusProvider
+//      * @expectedException \TypeError
+//      */
+//     public function testSetStatus($status, $reason)
+//     {
+//         $response = $this->getResponse()->setStatus($status, $reason);
+//     }
 }

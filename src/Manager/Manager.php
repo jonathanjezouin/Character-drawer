@@ -4,9 +4,7 @@ namespace ASCII\Manager;
 
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
-use stdClass;
 use PDO;
-use Exception;
 
 class Manager
 {
@@ -17,23 +15,6 @@ class Manager
 
     private function __construct()
     { 
-    }
-
-    private function getConfiguration(): stdClass
-    {
-        $fileName = __DIR__ . "/../../app/config.json";
-        if (!is_file($fileName)) {
-            throw new Exception("config.json must exists in app");
-        } else if (!($jsonText = file_get_contents($fileName))) {
-            throw new Exception("Can't read config.json");
-        } else if (!($json = json_decode($jsonText))) {
-            throw new Exception("config.json mal formed");
-        } else if (!isset($json->dsn)
-            || !isset($json->user)
-            || !isset($json->pswd)) {
-                throw new Exception("config.json must have dsn, user and pswd");
-        }
-       return $json;
     }
 
     public static function getInstance(): Manager
@@ -76,7 +57,7 @@ class Manager
                 false
             )
         );
-        return Manager::getDoctrine();
+        return $this->getDoctrine();
     }
 
 }
