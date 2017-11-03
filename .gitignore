@@ -1,0 +1,6 @@
+.settings/
+vendor/
+.buildpath
+.project
+web/node_modules/
+web/.htpasswd

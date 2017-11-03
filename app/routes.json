@@ -1,0 +1,7 @@
+{
+	"/ASCII/web/auth": "ASCII/Controller/Auth/AuthController",
+	"/ASCII/web/admin/fonts": "ASCII/Controller/Admin/FontsController",
+	"/ASCII/web/admin/fonts/[a-zA-Z0-9-_\\s]{1,32}": "ASCII/Controller/Admin/FontsController",
+	"/ASCII/web/admin/chars": "ASCII/Controller/Admin/CharsController",
+	"/ASCII/web/admin/symbs": "ASCII/Controller/Admin/SymbsController"
+}

@@ -1,0 +1,20 @@
+{
+	"name" : "ASCII",
+	"autoload" : {
+		"psr-4" : {
+			"ASCII\\" : "src/"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"ASCII\\Test\\" : "test/"
+		}
+	},
+	"minimum-stability": "dev",
+	"require" : {
+		"doctrine/orm": "~2.5"
+	},
+	"require-dev" : {
+		"phpunit/phpunit": "dev-master"
+	}
+}

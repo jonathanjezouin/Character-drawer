@@ -1,0 +1,7 @@
+{
+	"dsn": "mysql:host=localhost;dbname=ascii;charset=UTF8",
+	"dbname" : "ascii",
+	"host": "localhost",
+	"user": "root",
+	"pswd": ""
+}

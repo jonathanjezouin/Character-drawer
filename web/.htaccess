@@ -1,0 +1,26 @@
+# Deny access to the .htaccess file and will trigger a 403 status code
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+#La regle suivante ne concerne que les adresses admin
+#et impose un login/mdp a ces pages (login/mdp dans .htpasswd)
+#on le commente pour ne plus l'avoir
+#<Files "admin">
+#	AuthName "Acces reserve"
+#	AuthUserFile C:/xampp/htdocs/ASCII/app/.htpasswd
+#	AuthType Basic
+#	Require valid-user
+#</Files>
+
+
+#Turn RewriteEngine to On
+RewriteEngine On
+
+#Deliver static file
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+#Trigger app.php and add query string append flag
+RewriteRule ^(.*)$ index.php [QSA,L]
