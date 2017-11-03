@@ -15,8 +15,6 @@ class FontsController extends Controller
         $model = new FontsModel();
         $model->autorisation = ($this->isSuperAdmin) ? "OK" : "KO";
         $model->select();
-        
-        $url = filter_input(INPUT_SERVER, "REDIRECT_URL");
 
         return $this->render("fonts/read", [
             "token" => array_key_exists("token", $_SESSION) ? $_SESSION["token"] : null,

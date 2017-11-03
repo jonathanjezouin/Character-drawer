@@ -24,7 +24,7 @@ abstract class Controller
                 && $_SESSION["user"]["ip"] !== filter_input(INPUT_SERVER, "REMOTE_ADDR")
                 && $_SESSION["user"]["userAgent"] !== filter_input(INPUT_SERVER, "HTTP_USER_AGENT")
             ) {
-           die("Do not try to rob one's user session.");
+           echo("Do not try to rob one's user session.");
         }
     }
     
