@@ -29,8 +29,6 @@ class ResponseTest extends \PHPUnit\Framework\TestCase
             ["header", []],
             ["body", ""]
         ];
-        
-        
     }
     
     /**
